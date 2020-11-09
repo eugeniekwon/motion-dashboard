@@ -1,13 +1,17 @@
 import {gsap} from "gsap";
 
 
+gsap.set("#logo-wordmark", {transformOrigin: "50% 50%"})
+
 const logoTL = gsap.timeline();
 
-// logoTL.to("#mosquito", {duration:3, motionPath:"#mosquito-path", autoRotate:true})
-//         .from("#mosquito", {duration:1.5, scale: 0.3, ease:"none"})
-//         //  .from("#mosquito", {duration:3, x:-10, y:10, rotation:360, ease:"none"})
-//         //  .to("#mosquito", {duration:3, x:100, y:200}, "-=3")
+logoTL.from("#logo-wordmark", {opacity: 0, duration: 1})
+        .fromTo("#logo-wordmark", {scale: 5}, {duration: 2, scale: 1})
+        .fromTo("#logo-circle", {opacity: 0}, {opacity: 1, duration: 2})
+        .fromTo("#left-wing", {opacity: 0, x:120}, {opacity: 1, duration: 2, x: 0}, "wing") 
+        .fromTo("#right-wing", {opacity: 0, x:-120}, {opacity: 1, duration: 2, x: 0}, "wing"); 
 
 export function logoAnimation(){
     return logoTL;
 }
+

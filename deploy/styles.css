@@ -361,3 +361,11 @@ textarea {
 /* =============
     Footer
 ============= */
+#logo-page {
+  display: grid;
+  grid-template-columns: auto 100% auto;
+  grid-template-areas: ". logo .";
+  height: 100vh; }
+  #logo-page > div {
+    grid-area: logo;
+    height: 100vh; }

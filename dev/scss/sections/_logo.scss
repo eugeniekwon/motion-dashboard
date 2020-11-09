@@ -1,0 +1,11 @@
+#logo-page{
+    display: grid;
+    grid-template-columns: auto 100% auto;
+    grid-template-areas: ". logo .";
+    height: 100vh;
+
+    >div{
+        grid-area: logo;
+        height: 100vh;
+    }
+}
