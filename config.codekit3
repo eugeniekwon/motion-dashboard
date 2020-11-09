@@ -64,12 +64,76 @@
 		"oAP": "/dev/content/dashboard.html",
 		"oF": 0
 		},
+	"/dev/content/fuel.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/fuel.html",
+		"oF": 0
+		},
+	"/dev/content/gear.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/gear.html",
+		"oF": 0
+		},
 	"/dev/content/logo.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/logo.html",
+		"oF": 0
+		},
+	"/dev/content/music.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/music.html",
+		"oF": 0
+		},
+	"/dev/content/navigation.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/navigation.html",
+		"oF": 0
+		},
+	"/dev/content/speedometer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/speedometer.html",
+		"oF": 0
+		},
+	"/dev/content/time.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/time.html",
+		"oF": 0
+		},
+	"/dev/content/warning.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/warning.html",
+		"oF": 0
+		},
+	"/dev/content/weather.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/weather.html",
 		"oF": 0
 		},
 	"/dev/global/head.kit": {
