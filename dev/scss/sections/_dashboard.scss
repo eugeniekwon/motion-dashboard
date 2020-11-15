@@ -1,0 +1,11 @@
+#dashboard-total{
+    display: grid;
+    grid-template-columns: auto 100% auto;
+    grid-template-areas: ". dashboard .";
+    height: 100vh;
+
+    >div{
+        grid-area: dashboard;
+        height: 100vh;
+    }
+}

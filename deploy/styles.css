@@ -323,6 +323,9 @@ ul {
   ul li {
     list-style: none; }
 
+.hide {
+  display: none; }
+
 /* =============
     Typography
 ============= */
@@ -368,4 +371,13 @@ textarea {
   height: 100vh; }
   #logo-page > div {
     grid-area: logo;
+    height: 100vh; }
+
+#dashboard-total {
+  display: grid;
+  grid-template-columns: auto 100% auto;
+  grid-template-areas: ". dashboard .";
+  height: 100vh; }
+  #dashboard-total > div {
+    grid-area: dashboard;
     height: 100vh; }
