@@ -26,6 +26,7 @@ weatherTLTwo.to("#weather-marker", {opacity:0, duration:0.5})
             .to("#snow", {opacity:0, duration:0.3, y:2}, "-=0.2")
             .to("#cloud", {opacity:0, duration:0.3, y:-40}, "-=0.2")
             .to("#sun", {scale:1.2, duration: 0.2})
+            .from("#glow", {opacity:0, duration:0.3})
 
             
 export function weatherAnimationTwo(){
