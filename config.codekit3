@@ -171,6 +171,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/gear.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/gear-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/logo.js": {
 		"bF": 0,
 		"ft": 64,
