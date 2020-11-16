@@ -4,7 +4,7 @@ const speedometerTL = gsap.timeline();
 
 gsap.set("#speedometer", {transformOrigin: "50% 50%"})
 
-speedometerTL.fromTo("#speedometer", {scale: 0.5}, {scale:1, duration:0.3}, "-=0.05")
+speedometerTL.fromTo("#speedometer", {opacity: 0, scale: 0.5}, {opacity:1, scale:1, duration:0.3}, "-=0.05")
             .fromTo("#tickmark-1", {opacity: 0}, {opacity: 1, ease: 2, duration:0.2}, "-=0.05")
             .fromTo("#tickmark-2", {opacity: 0}, {opacity: 1, ease: 2, duration:0.2}, "-=0.05")
             .fromTo("#tickmark-3", {opacity: 0}, {opacity: 1, ease: 2, duration:0.2}, "-=0.05")

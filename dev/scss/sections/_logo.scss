@@ -1,11 +1,17 @@
 #logo-page{
-    display: grid;
-    grid-template-columns: auto 100% auto;
-    grid-template-areas: ". logo .";
-    height: 100vh;
+    // display: grid;
+    // grid-template-columns: auto 80% auto;
+    // grid-template-areas: ". logo .";
+    // height: 100vh;
+    
 
-    >div{
-        grid-area: logo;
-        height: 100vh;
-    }
+    // >div{
+    //     grid-area: logo;
+    //     // height: 100vh;
+
+    //     svg{
+    //         width: 100%;
+            
+    //     }
+    // }
 }

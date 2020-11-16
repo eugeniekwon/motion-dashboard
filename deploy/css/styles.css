@@ -323,6 +323,9 @@ ul {
   ul li {
     list-style: none; }
 
+.hide {
+  display: none; }
+
 /* =============
     Typography
 ============= */
@@ -361,12 +364,12 @@ textarea {
 /* =============
     Footer
 ============= */
-#content {
-  background-color: #000;
+#dashboard-total {
   display: grid;
-  grid-template-areas: ". svg .";
-  grid-template-columns: auto 50% auto;
+  grid-template-columns: auto 80% auto;
+  grid-template-areas: ". dashboard .";
   height: 100vh; }
-  #content > div {
-    grid-area: svg;
-    padding-top: 250px; }
+  #dashboard-total > div {
+    grid-area: dashboard; }
+    #dashboard-total > div svg {
+      width: 100%; }
