@@ -1,0 +1,18 @@
+#svg-container{
+    display: grid;
+    grid-template-columns: auto 80% auto;
+    grid-template-areas: ". dashboard .";
+    height: 100vh;
+    
+
+    >div{
+        grid-area: dashboard;
+        position: relative;
+        height: 100vh;
+
+        svg{
+            width: 100%;
+            position: absolute;
+        }
+    }
+}
