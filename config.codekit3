@@ -161,6 +161,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/fuel.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/fuel-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/gear.js": {
 		"bF": 0,
 		"ft": 64,
@@ -183,6 +194,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/navigation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/navigation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/scripts.js": {
 		"bF": 4,
 		"ft": 64,
@@ -201,6 +223,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/speedometer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/time.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/time-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
