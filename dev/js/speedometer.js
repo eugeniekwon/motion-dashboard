@@ -23,3 +23,29 @@ speedometerTL.fromTo("#speedometer", {opacity: 0, scale: 0.5}, {opacity:1, scale
 export function speedometerAnimation(){
     return speedometerTL;
 }
+
+
+
+
+
+
+
+const speedometerTLTwo = gsap.timeline();
+
+gsap.set("#speedometer", {transformOrigin: "50% 50%"})
+
+speedometerTLTwo.fromTo("#speed-zero", {opacity: 1}, {opacity:0, duration:0.5}, "to ten")
+                .fromTo("#speed-ten", {opacity: 0}, {opacity:1, duration:0.5}, "to ten")
+                
+                .fromTo("#speed-ten", {opacity: 1}, {opacity:0, duration:0.5}, "to fifteen")
+                .fromTo("#speed-fifteen", {opacity: 0}, {opacity:1, duration:0.5}, "to fifteen")
+
+                .fromTo("#speed-fifteen", {opacity: 1}, {opacity:0, duration:0.5}, "to twentyfive")
+                .fromTo("#speed-twentyfive", {opacity: 0}, {opacity:1, duration:0.5}, "to twentyfive")
+
+
+
+            
+export function speedometerAnimationTwo(){
+    return speedometerTLTwo;
+}

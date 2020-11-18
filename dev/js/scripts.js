@@ -16,6 +16,11 @@ import {navigationAnimation} from "./navigation.js";
 import {timeAnimation} from "./time.js";
 import {fuelAnimation} from "./fuel.js";
 import {timeAnimationTwo} from "./time.js";
+import {speedometerAnimationTwo} from "./speedometer.js";
+
+import {timeAnimationThree} from "./time.js";
+import {weatherAnimationThree} from "./weather.js";
+import {warningAnimation} from "./warning.js";
 
 
 const mainTL = gsap.timeline();
@@ -32,6 +37,12 @@ mainTL.add(logoAnimation())
         .add(timeAnimation())
         .add(fuelAnimation())
         .add(timeAnimationTwo())
+        .add(speedometerAnimationTwo())
+
+
+        .add(timeAnimationThree())
+        .add(weatherAnimationThree())
+        .add(warningAnimation())
 
 
 
