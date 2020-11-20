@@ -31,10 +31,10 @@ logocircleTL.to("#left-wing", {opacity: 0, duration: 0.1}, "wing")
             .to("#right-wing", {opacity: 0, duration: 0.1}, "wing")
 
             .to("#logo-wordmark", {opacity: 0, duration: 0.4})
-            .to("#logo-circle", {scale: 0.2, opacity: 0, duration: 0.4}, "on")
-            .to("#white-circle-bkgd", {scale: 0.2, opacity: 0, duration: 0.4}, "on")
+            .to("#logo-circle", {scale: 0.2, opacity: 0, duration: 0.4}, "-=0.1")
+            .to("#white-circle-bkgd", {scale: 0.2, opacity: 0, duration: 0.4}, "-=0.1")
 
-            .fromTo("#dashboard-total", {backgroundColor: "#ffffff"}, {backgroundColor: "#000000", duration:0.5}, "-=0.2")
+            .fromTo("#svg-container", {backgroundColor: "#ffffff"}, {backgroundColor: "#000000", duration:0.5}, "-=0.2")
             .fromTo("#dashboard-body", {opacity:0}, {opacity:1, duration:0.5}, "-=0.2")
 
 

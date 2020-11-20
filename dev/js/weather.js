@@ -48,3 +48,22 @@ weatherTLThree.to("#sun", {opacity: 0, scale:1, duration: 0.3}, "weather change"
 export function weatherAnimationThree(){
     return weatherTLThree;
 }
+
+
+
+
+
+
+const weatherTLFour = gsap.timeline();
+
+gsap.set("#weather", {transformOrigin: "50% 50%"})
+gsap.set("#snow", {transformOrigin: "50% 50%"})
+
+weatherTLFour.to("#snow", {opacity: 0, scale:1, duration: 0.3}, "weather change")
+            .to("#sun", {opacity: 1, duration:0.5, scale: 1.2, y:10}, "weather change")
+            .to("#glow", {stroke: "#E2B757", duration:0.3}, "-=0.2")
+
+            
+export function weatherAnimationFour(){
+    return weatherTLFour;
+}

@@ -49,3 +49,25 @@ speedometerTLTwo.fromTo("#speed-zero", {opacity: 1}, {opacity:0, duration:0.5}, 
 export function speedometerAnimationTwo(){
     return speedometerTLTwo;
 }
+
+
+
+
+
+const speedometerTLThree = gsap.timeline();
+
+gsap.set("#speedometer", {transformOrigin: "50% 50%"})
+
+speedometerTLThree.fromTo("#speed-twentyfive", {opacity: 1}, {opacity:0, duration:0.5}, "to thirtyeight")
+                    .fromTo("#speed-thirtyeight", {opacity: 0}, {opacity:1, duration:0.5}, "to thirtyeight")
+
+                    .fromTo("#speed-thirtyeight", {opacity: 1}, {opacity:0, duration:0.5}, "to fortyfive")
+                    .fromTo("#speed-fortyfive", {opacity: 0}, {opacity:1, duration:0.5}, "to fortyfive")
+
+                    .fromTo("#speed-fortyfive", {opacity: 1}, {opacity:0, duration:0.5}, "to sixty")
+                    .fromTo("#speed-sixty", {opacity: 0}, {opacity:1, duration:0.5}, "to sixty")
+
+            
+export function speedometerAnimationThree(){
+    return speedometerTLThree;
+}

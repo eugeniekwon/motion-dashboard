@@ -6,7 +6,7 @@ gsap.registerPlugin(GSDevTools);
 
 import {logoAnimation} from "./logo.js";
 import {logocircleAnimation} from "./logo.js";
-// import {dashboardAnimation} from "./dashboard.js";
+
 import {speedometerAnimation} from "./speedometer.js";
 import {weatherAnimation} from "./weather.js";
 import {gearAnimation} from "./gear.js";
@@ -23,31 +23,36 @@ import {weatherAnimationThree} from "./weather.js";
 import {warningAnimation} from "./warning.js";
 
 import {musicAnimation} from "./music.js";
+import {speedometerAnimationThree} from "./speedometer.js";
+import {weatherAnimationFour} from "./weather.js";
 
 
 const mainTL = gsap.timeline();
 
 mainTL.add(logoAnimation())
         .add(logocircleAnimation())
-        // .add(dashboardAnimation())
+
         .add(speedometerAnimation())
-        .add(weatherAnimation())
-        .add(gearAnimation())
-        .add(weatherAnimationTwo())
-        .add(gearAnimationTwo())
+        .add(weatherAnimation(), "weather-gear")
+        .add(gearAnimation(), "weather-gear")
+        .add(weatherAnimationTwo(), "weather-gear-2")
+        .add(gearAnimationTwo(), "weather-gear-2")
         .add(navigationAnimation())
         .add(timeAnimation())
         .add(fuelAnimation())
         .add(timeAnimationTwo())
         .add(speedometerAnimationTwo())
 
-
         .add(timeAnimationThree())
         .add(weatherAnimationThree())
         .add(warningAnimation())
 
 
-        .add(musicAnimation())
+        .add(musicAnimation(), "music-speed")
+        .add(speedometerAnimationThree(), "music-speed")
+        .add(weatherAnimationFour())
+
+        
 
 
 
