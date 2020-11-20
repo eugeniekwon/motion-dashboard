@@ -22,6 +22,8 @@ import {timeAnimationThree} from "./time.js";
 import {weatherAnimationThree} from "./weather.js";
 import {warningAnimation} from "./warning.js";
 
+import {musicAnimation} from "./music.js";
+
 
 const mainTL = gsap.timeline();
 
@@ -43,6 +45,9 @@ mainTL.add(logoAnimation())
         .add(timeAnimationThree())
         .add(weatherAnimationThree())
         .add(warningAnimation())
+
+
+        .add(musicAnimation())
 
 
 
