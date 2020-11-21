@@ -71,3 +71,54 @@ speedometerTLThree.fromTo("#speed-twentyfive", {opacity: 1}, {opacity:0, duratio
 export function speedometerAnimationThree(){
     return speedometerTLThree;
 }
+
+
+
+
+const speedometerTLFour = gsap.timeline();
+
+gsap.set("#speedometer", {transformOrigin: "50% 50%"})
+
+speedometerTLFour.fromTo("#speed-sixty", {opacity: 1}, {opacity:0, duration:0.5}, "to seventytwo")
+                .fromTo("#speed-seventytwo", {opacity: 0}, {opacity:1, duration:0.5}, "to seventytwo")
+
+            
+            
+export function speedometerAnimationFour(){
+    return speedometerTLFour;
+}
+
+
+
+
+const speedometerTLFive = gsap.timeline();
+
+gsap.set("#speedometer", {transformOrigin: "50% 50%"})
+
+speedometerTLFive.fromTo("#speed-seventytwo", {opacity: 1}, {opacity:0, duration:0.5}, "to twentyfive")
+                    .fromTo("#speed-twentyfive", {opacity: 0}, {opacity:1, duration:0.5}, "to twentyfive")
+
+                    
+            
+export function speedometerAnimationFive(){
+    return speedometerTLFive;
+}
+
+
+
+
+
+const speedometerTLSix = gsap.timeline();
+
+gsap.set("#speedometer", {transformOrigin: "50% 50%"})
+
+speedometerTLSix.fromTo("#speed-twentyfive", {opacity: 1}, {opacity:0, duration:0.5}, "to thirtyeight")
+                    .fromTo("#speed-thirtyeight", {opacity: 0}, {opacity:1, duration:0.5}, "to thirtyeight")
+
+                    
+            
+export function speedometerAnimationSix(){
+    return speedometerTLSix;
+}
+
+

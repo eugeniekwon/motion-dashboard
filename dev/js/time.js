@@ -38,14 +38,14 @@ export function timeAnimationThree(){
 
 
 
-// const timeTLFour= gsap.timeline();
+const timeTLFour= gsap.timeline();
 
-// timeTLFour.fromTo("#twelveseven", {opacity:1}, {opacity:0, duration:1}, "clock")
-// timeTLFour.fromTo("#twelveeight", {opacity:0}, {opacity:1, duration:1}, "clock")
+timeTLFour.fromTo("#twelveseven", {opacity:1}, {opacity:0, duration:1}, "clock")
+timeTLFour.fromTo("#twelveeight", {opacity:0}, {opacity:1, duration:1}, "clock")
 
-// export function timeAnimationFour(){
-//     return timeTLFour;
-// }
+export function timeAnimationFour(){
+    return timeTLFour;
+}
 
 
 

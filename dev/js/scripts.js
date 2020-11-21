@@ -20,11 +20,25 @@ import {speedometerAnimationTwo} from "./speedometer.js";
 
 import {timeAnimationThree} from "./time.js";
 import {weatherAnimationThree} from "./weather.js";
-import {warningAnimation} from "./warning.js";
+
 
 import {musicAnimation} from "./music.js";
 import {speedometerAnimationThree} from "./speedometer.js";
 import {weatherAnimationFour} from "./weather.js";
+
+import {fuelAnimationTwo} from "./fuel.js";
+import {timeAnimationFour} from "./time.js";
+import {speedometerAnimationFour} from "./speedometer.js";
+
+import {warningAnimation} from "./warning.js";
+import {speedometerAnimationFive} from "./speedometer.js";
+
+import {fuelAnimationThree} from "./fuel.js";
+import {speedometerAnimationSix} from "./speedometer.js";
+
+
+import {fuelAnimationFour} from "./fuel.js";
+
 
 
 const mainTL = gsap.timeline();
@@ -45,16 +59,28 @@ mainTL.add(logoAnimation())
 
         .add(timeAnimationThree())
         .add(weatherAnimationThree())
-        .add(warningAnimation())
+        
 
 
         .add(musicAnimation(), "music-speed")
         .add(speedometerAnimationThree(), "music-speed")
         .add(weatherAnimationFour())
 
+        .add(fuelAnimationTwo())
+        .add(timeAnimationFour(), "-=0.3")
+        .add(speedometerAnimationFour())
+
+        .add(warningAnimation())
+        .add(speedometerAnimationFive(), "-=1.5")
+
+        .add(fuelAnimationThree())
+        .add(speedometerAnimationSix())
+
+        .add(fuelAnimationFour())
+
         
 
-
+        
 
 
 
