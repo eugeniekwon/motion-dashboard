@@ -38,6 +38,25 @@ import {speedometerAnimationSix} from "./speedometer.js";
 
 
 import {fuelAnimationFour} from "./fuel.js";
+import {fuelAnimationFive} from "./fuel.js";
+
+import {navigationAnimationTwo} from "./navigation.js";
+import {timeAnimationFive} from "./time.js";
+import {fuelAnimationSix} from "./fuel.js";
+
+
+import {musicAnimationTwo} from "./music.js";
+import {weatherAnimationFive} from "./weather.js";
+
+import {speedometerAnimationSeven} from "./speedometer.js";
+import {speedometerAnimationEight} from "./speedometer.js";
+import {speedometerAnimationNine} from "./speedometer.js";
+import {speedometerAnimationTen} from "./speedometer.js";
+
+import {speedometerAnimationEleven} from "./speedometer.js";
+
+
+import {logofinalAnimation} from "./logofinal.js";
 
 
 
@@ -77,14 +96,28 @@ mainTL.add(logoAnimation())
         .add(speedometerAnimationSix())
 
         .add(fuelAnimationFour())
+        .add(speedometerAnimationSeven())
 
+        .add(fuelAnimationFive())
+        .add(speedometerAnimationEight())
+
+        .add(navigationAnimationTwo())
+        .add(timeAnimationFive())
+        
+        .add(fuelAnimationSix())
         
 
+        .add(musicAnimationTwo())
+        .add(weatherAnimationFive())
         
+        
+        .add(speedometerAnimationNine())
+        .add(speedometerAnimationTen())
 
+        .add(speedometerAnimationEleven())
 
-
-
+        .add(logofinalAnimation())
+        
 
 
 

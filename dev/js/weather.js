@@ -67,3 +67,19 @@ weatherTLFour.to("#snow", {opacity: 0, scale:1, duration: 0.3}, "weather change"
 export function weatherAnimationFour(){
     return weatherTLFour;
 }
+
+
+
+
+
+const weatherTLFive = gsap.timeline();
+
+gsap.set("#sun", {transformOrigin: "50% 50%"})
+
+weatherTLFive.to("#sun", {opacity: 0, scale:1, fill:"#222", duration: 0.3})
+            .to("#glow", {opacity: 0, duration:0.3})
+
+            
+export function weatherAnimationFive(){
+    return weatherTLFive;
+}

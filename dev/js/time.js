@@ -4,7 +4,8 @@ const timeTL = gsap.timeline();
 
 gsap.set("#time", {transformOrigin: "50% 50%"})
 
-timeTL.fromTo("#twelvefive", {opacity:0}, {opacity:1, duration:1})
+timeTL.fromTo("#twelvefive", {opacity:0}, {opacity:1, duration:1}, "start time")
+        .fromTo("#PM", {opacity:0}, {opacity:1, duration:1}, "start time")
 
 export function timeAnimation(){
     return timeTL;
@@ -49,11 +50,11 @@ export function timeAnimationFour(){
 
 
 
-// const timeTLFive= gsap.timeline();
+const timeTLFive= gsap.timeline();
 
-// timeTLFive.fromTo("#twelveeight", {opacity:1}, {opacity:0, duration:1}, "clock")
-// timeTLFive.fromTo("#twelvenine", {opacity:0}, {opacity:1, duration:1}, "clock")
+timeTLFive.fromTo("#twelveeight", {opacity:1}, {opacity:0, duration:1}, "clock")
+timeTLFive.fromTo("#twelvenine", {opacity:0}, {opacity:1, duration:1}, "clock")
 
-// export function timeAnimationFive(){
-//     return timeTLFive;
-// }
+export function timeAnimationFive(){
+    return timeTLFive;
+}

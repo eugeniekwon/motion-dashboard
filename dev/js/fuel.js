@@ -62,30 +62,30 @@ export function fuelAnimationFour(){
 
 
 
-// const fuelTLFive = gsap.timeline();
+const fuelTLFive = gsap.timeline();
 
-// fuelTLFive.fromTo("#seventyeight-f", {opacity: 1}, {opacity: 0, duration: 0.3}, "appear")
-//         .fromTo("#seventytwo-f", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
-//         .to("#fuel-decrease", {x:20, duration: 0.3})
+fuelTLFive.fromTo("#seventyeight-f", {opacity: 1}, {opacity: 0, duration: 0.3}, "appear")
+        .fromTo("#seventytwo-f", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
+        .to("#fuel-decrease", {x:20, duration: 0.3})
 
         
     
-// export function fuelAnimationFive(){
-//     return fuelTLFive;
-// }
+export function fuelAnimationFive(){
+    return fuelTLFive;
+}
 
 
 
 
 
-// const fuelTLSix = gsap.timeline();
+const fuelTLSix = gsap.timeline();
 
-// fuelTLSix.fromTo("#seventytwo-f", {opacity: 1}, {opacity: 0, duration: 0.3}, "appear")
-//         .fromTo("#sixtyfive-f", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
-//         .to("#fuel-decrease", {x:22, duration: 0.3})
+fuelTLSix.fromTo("#seventytwo-f", {opacity: 1}, {opacity: 0, duration: 0.3}, "appear")
+        .fromTo("#sixtyfive-f", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
+        .to("#fuel-decrease", {x:22, duration: 0.3})
         
         
     
-// export function fuelAnimationSix(){
-//     return fuelTLSix;
-// }
+export function fuelAnimationSix(){
+    return fuelTLSix;
+}
