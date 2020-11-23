@@ -32,7 +32,7 @@ export function navigationAnimation(){
 const navigationTLTwo = gsap.timeline();
 gsap.set("#navigation-arrow", {xPercent:-50, yPercent:-50, transformOrigin: "50% 50%"})
 
-navigationTLTwo.to("#navigation-arrow", {duration:3, motionPath:"#original-path", autoRotate:true})
+navigationTLTwo.to("#navigation-arrow", {duration:3, motionPath:{path:"#original-path", align:"#original-path", autoRotate: true}, autoRotate:true})
         // .from("#navigation-arrow", {duration:1.5, ease:"none"})
 
 
