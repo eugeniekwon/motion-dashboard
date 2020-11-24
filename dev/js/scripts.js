@@ -54,6 +54,7 @@ import {speedometerAnimationNine} from "./speedometer.js";
 import {speedometerAnimationTen} from "./speedometer.js";
 
 import {speedometerAnimationEleven} from "./speedometer.js";
+import {gearAnimationThree} from "./gear.js";
 
 
 import {logofinalAnimation} from "./logofinal.js";
@@ -115,6 +116,9 @@ mainTL.add(logoAnimation())
         .add(speedometerAnimationTen())
 
         .add(speedometerAnimationEleven())
+
+        .add(gearAnimationThree())
+
 
         .add(logofinalAnimation())
         
