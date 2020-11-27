@@ -75,15 +75,16 @@ mainTL.add(logoAnimation())
         .add(timeAnimation())
         .add(fuelAnimation())
         .add(timeAnimationTwo())
+
         .add(speedometerAnimationTwo())
 
         .add(timeAnimationThree())
         .add(weatherAnimationThree())
-        
-
 
         .add(musicAnimation(), "music-speed")
         .add(speedometerAnimationThree(), "music-speed")
+
+        .add(navigationAnimationTwo())
         .add(weatherAnimationFour())
 
         .add(fuelAnimationTwo())
@@ -102,7 +103,7 @@ mainTL.add(logoAnimation())
         .add(fuelAnimationFive())
         .add(speedometerAnimationEight())
 
-        .add(navigationAnimationTwo())
+        
         .add(timeAnimationFive())
         
         .add(fuelAnimationSix())
