@@ -109,12 +109,12 @@ mainTL.add(logoAnimation())
         .add(fuelAnimationSix())
         
 
-        .add(musicAnimationTwo())
-        .add(weatherAnimationFive())
-        
-        
         .add(speedometerAnimationNine())
         .add(speedometerAnimationTen())
+
+        
+        .add(weatherAnimationFive())
+        .add(musicAnimationTwo())
 
         .add(speedometerAnimationEleven())
 
