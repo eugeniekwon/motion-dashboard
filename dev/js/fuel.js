@@ -79,14 +79,14 @@ export function fuelAnimationFive(){
 
 
 
-const fuelTLSix = gsap.timeline();
+// const fuelTLSix = gsap.timeline();
 
-fuelTLSix.fromTo("#seventytwo-f", {opacity: 1}, {opacity: 0, duration: 0.3}, "appear")
-        .fromTo("#sixtyfive-f", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
-        .to("#fuel-decrease", {x:22, duration: 0.3})
+// fuelTLSix.fromTo("#seventytwo-f", {opacity: 1}, {opacity: 0, duration: 0.3}, "appear")
+//         .fromTo("#sixtyfive-f", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
+//         .to("#fuel-decrease", {x:22, duration: 0.3})
         
         
     
-export function fuelAnimationSix(){
-    return fuelTLSix;
-}
+// export function fuelAnimationSix(){
+//     return fuelTLSix;
+// }

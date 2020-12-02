@@ -5,7 +5,6 @@ gsap.registerPlugin(DrawSVGPlugin);
 
 const weatherTL = gsap.timeline();
 
-
 gsap.set("#weather", {transformOrigin: "50% 50%"})
 
 weatherTL.from("#sun", {opacity:0, duration:0.3, x:-50})
@@ -37,7 +36,6 @@ export function weatherAnimationTwo(){
 }
 
 
-
 const weatherTLThree = gsap.timeline();
 
 gsap.set("#weather", {transformOrigin: "50% 50%"})
@@ -51,10 +49,6 @@ weatherTLThree.to("#sun", {opacity: 0, scale:1, duration: 0.3}, "weather change"
 export function weatherAnimationThree(){
     return weatherTLThree;
 }
-
-
-
-
 
 
 const weatherTLFour = gsap.timeline();
@@ -71,18 +65,3 @@ export function weatherAnimationFour(){
     return weatherTLFour;
 }
 
-
-
-
-
-// const weatherTLFive = gsap.timeline();
-
-// gsap.set("#sun", {transformOrigin: "50% 50%"})
-
-// weatherTLFive.to("#sun", {opacity: 0, scale:1, fill:"#222", duration: 0.3})
-//             .to("#glow", {opacity: 0, duration:0.3})
-
-            
-// export function weatherAnimationFive(){
-//     return weatherTLFive;
-// }
