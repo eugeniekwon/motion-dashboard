@@ -1,6 +1,10 @@
 import {gsap} from "gsap";
+import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
+
+gsap.registerPlugin(DrawSVGPlugin);
 
 const weatherTL = gsap.timeline();
+
 
 gsap.set("#weather", {transformOrigin: "50% 50%"})
 
@@ -26,9 +30,8 @@ weatherTLTwo.to("#weather-marker", {opacity:0, duration:0.5})
             .to("#snow", {opacity:0, duration:0.3, y:2}, "-=0.2")
             .to("#cloud", {opacity:0, duration:0.3, y:-40}, "-=0.2")
             .to("#sun", {scale:1.2, duration: 0.2})
-            .from("#glow", {opacity:0, duration:0.3})
+            .from("#glow", {duration: 0.5, drawSVG:"0%", ease:"none"})
 
-            
 export function weatherAnimationTwo(){
     return weatherTLTwo;
 }
@@ -72,14 +75,14 @@ export function weatherAnimationFour(){
 
 
 
-const weatherTLFive = gsap.timeline();
+// const weatherTLFive = gsap.timeline();
 
-gsap.set("#sun", {transformOrigin: "50% 50%"})
+// gsap.set("#sun", {transformOrigin: "50% 50%"})
 
-weatherTLFive.to("#sun", {opacity: 0, scale:1, fill:"#222", duration: 0.3})
-            .to("#glow", {opacity: 0, duration:0.3})
+// weatherTLFive.to("#sun", {opacity: 0, scale:1, fill:"#222", duration: 0.3})
+//             .to("#glow", {opacity: 0, duration:0.3})
 
             
-export function weatherAnimationFive(){
-    return weatherTLFive;
-}
+// export function weatherAnimationFive(){
+//     return weatherTLFive;
+// }

@@ -2,7 +2,8 @@ import {gsap} from "gsap";
 
 const fuelTL = gsap.timeline();
 
-fuelTL.fromTo("#fuel-bkgd", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
+fuelTL.from("#fuel-bkgd", {duration: 0.5, drawSVG:"0%", ease:"none"})
+        .fromTo("#fuel-bkgd-fill", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
         .fromTo("#f-fuel", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
         .fromTo("#p-fuel", {opacity: 0}, {opacity: 1, duration: 0.3}, "appear")
         

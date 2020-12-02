@@ -77,11 +77,16 @@ gearTLThree.to("#gearD", {duration: 0.2, scale: 1})
             .to("#gearP", {duration:0.4, fill: "#BD6757"}, "R")
 
 
-            .to("#gearR", {opacity:0, duration:0.2, x:-50, delay:1})
-            .to("#gearN", {opacity:0, duration:0.2, x:-50}, "-=0.1")
-            .to("#gearD", {opacity:0, duration:0.2, x:-50}, "-=0.1")
+            .to("#gearR", {opacity:0, duration:0.2, y:-80, delay:1})
+            .to("#gearN", {opacity:0, duration:0.2, y:-150}, "-=0.1")
+            .to("#gearD", {opacity:0, duration:0.2, y:-230}, "-=0.1")
+
+            // .to("#gearR", {opacity:0, duration:0.2, x:-50, delay:1})
+            // .to("#gearN", {opacity:0, duration:0.2, x:-50}, "-=0.1")
+            // .to("#gearD", {opacity:0, duration:0.2, x:-50}, "-=0.1")
+            
             .to("#gear-marker", {opacity:0, duration:0.3, x:-50})
-            // .to("#gearP", {duration: 0.3, fill: "#BD6757"})
+            .to("#gearP", {duration: 0.3, fill: "#BD6757"})
     
 export function gearAnimationThree(){
     return gearTLThree;
