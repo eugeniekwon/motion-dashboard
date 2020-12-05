@@ -2,7 +2,7 @@ import {gsap} from "gsap";
 
 const timeTL = gsap.timeline();
 
-gsap.set("#time", {transformOrigin: "50% 50%"})
+gsap.set("#time", {transformOrigin: "50% 50%"});
 
 timeTL.fromTo("#twelvefive", {opacity:0}, {opacity:1, duration:1}, "start time")
         .fromTo("#PM", {opacity:0}, {opacity:1, duration:1}, "start time")

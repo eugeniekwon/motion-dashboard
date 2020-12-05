@@ -1,5 +1,7 @@
 import {gsap} from "gsap";
 
+import {navigationAnimationTwo} from "./navigation.js";
+
 const speedometerTL = gsap.timeline();
 
 gsap.set("#speedometer", {transformOrigin: "50% 50%"})
@@ -30,7 +32,9 @@ const speedometerTLTwo = gsap.timeline();
 gsap.set("#speedometer", {transformOrigin: "50% 50%"})
 
 speedometerTLTwo.fromTo("#speed-zero", {opacity: 1}, {opacity:0, duration:0.5}, "to ten")
-                .fromTo("#speed-ten", {opacity: 0}, {opacity:1, duration:0.5}, "to ten")
+                .fromTo("#speed-ten", {opacity: 0}, {opacity:1, duration:0.5, onComplete: navigationAnimationTwo}, "to ten")
+
+
                 
                 .fromTo("#speed-ten", {opacity: 1}, {opacity:0, duration:0.5}, "to fifteen")
                 .fromTo("#speed-fifteen", {opacity: 0}, {opacity:1, duration:0.5}, "to fifteen")
@@ -115,33 +119,6 @@ export function speedometerAnimationSix(){
 
 
 
-// const speedometerTLSeven = gsap.timeline();
-
-// gsap.set("#speedometer", {transformOrigin: "50% 50%"})
-
-// speedometerTLSeven.fromTo("#speed-thirtyeight", {opacity: 1}, {opacity:0, duration:0.5}, "to fortyfive")
-//                     .fromTo("#speed-fortyfive", {opacity: 0}, {opacity:1, duration:0.5}, "to fortyfive")
-                    
-// export function speedometerAnimationSeven(){
-//     return speedometerTLSeven;
-// }
-
-
-
-// const speedometerTLEight = gsap.timeline();
-
-// gsap.set("#speedometer", {transformOrigin: "50% 50%"})
-
-// speedometerTLEight.fromTo("#speed-fortyfive", {opacity: 1}, {opacity:0, duration:0.5}, "to twentyfive")
-//                 .fromTo("#speed-thirtyeight", {opacity: 0}, {opacity:1, duration:0.5}, "to twentyfive")
-                    
-            
-// export function speedometerAnimationEight(){
-//     return speedometerTLEight;
-// }
-
-
-
 const speedometerTLSeven = gsap.timeline();
 
 gsap.set("#speedometer", {transformOrigin: "50% 50%"})
@@ -159,7 +136,6 @@ speedometerTLSeven.fromTo("#speed-thirtyeight", {opacity: 1}, {opacity:0, durati
 export function speedometerAnimationSeven(){
     return speedometerTLSeven;
 }
-
 
 
 

@@ -39,7 +39,7 @@ import {weatherAnimationFour} from "./weather.js";
 import {fuelAnimationFour} from "./fuel.js";
 import {fuelAnimationFive} from "./fuel.js";
 
-import {navigationAnimationTwo} from "./navigation.js";
+// import {navigationAnimationTwo} from "./navigation.js";
 import {timeAnimationFive} from "./time.js";
 
 import {speedometerAnimationSeven} from "./speedometer.js";
@@ -94,12 +94,13 @@ mainTL.add(logoAnimation())
         .add(gearAnimationThree(), "-=0.5")
 
         .add(logofinalAnimation(), "-=0.5")
+        //.add(navigationAnimationTwo())
         
 
 
-const navMainTL = gsap.timeline();
+// const navMainTL = gsap.timeline();
 
-navMainTL.add(navigationAnimationTwo())
+// navMainTL.add(navigationAnimationTwo())
 
 
 
