@@ -368,7 +368,8 @@ textarea {
   display: grid;
   grid-template-columns: auto 65% auto;
   grid-template-areas: ". dashboard .";
-  height: 100vh; }
+  height: 100vh;
+  padding-top: 10px; }
   #svg-container > div {
     grid-area: dashboard;
     position: relative;

@@ -1,7 +1,7 @@
 import {gsap} from "gsap";
-import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 
-gsap.registerPlugin(GSDevTools);
+// gsap.registerPlugin(GSDevTools);
 
 import {logoAnimation} from "./logo.js";
 import {logocircleAnimation} from "./logo.js";
@@ -51,6 +51,7 @@ import {logofinalAnimation} from "./logofinal.js";
 
 
 const mainTL = gsap.timeline();
+// const mainTL = gsap.timeline({onComplete:true});
 
 mainTL.add(logoAnimation())
         .add(logocircleAnimation())
@@ -105,4 +106,5 @@ mainTL.add(logoAnimation())
 
 
 
-GSDevTools.create();
+// GSDevTools.create();
+
