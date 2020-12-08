@@ -8,7 +8,7 @@ import {weatherAnimation, weatherAnimationTwo, weatherAnimationThree, weatherAni
 import {gearAnimation, gearAnimationTwo, gearAnimationThree} from "./gear.js";
 import {navigationAnimation} from "./navigation.js";
 import {timeAnimation} from "./time.js";
-import {fuelAnimation, fuelAnimationTwo} from "./fuel.js";
+import {fuelAnimation} from "./fuel.js";
 import {musicAnimation} from "./music.js";
 import {warningAnimation} from "./warning.js";
 import {logofinalAnimation} from "./logofinal.js";
@@ -22,14 +22,13 @@ mainTL.add(logoAnimation())
         .add(gearAnimation(), "weather-gear")
         .add(weatherAnimationTwo(), "weather-gear-2")
         .add(gearAnimationTwo(), "weather-gear-2")
-        .add(navigationAnimation())
-        .add(timeAnimation())
-        .add(fuelAnimation(), "-=3")
-        .add(fuelAnimationTwo(), "-=3")
-        .add(musicAnimation(),"-=2")
-        .add(weatherAnimationThree(),"-=2")
-        .add(warningAnimation())
-        .add(weatherAnimationFour())
+        .add(navigationAnimation(), "-=1")
+        .add(fuelAnimation(), "nav")
+        .add(timeAnimation(), "nav")
+        .add(weatherAnimationThree(), "-=7")
+        .add(musicAnimation(),"-=10")
+        .add(warningAnimation(), "-=5")
+        .add(weatherAnimationFour(), "-=5")
         .add(gearAnimationThree(), "-=0.5")
         .add(logofinalAnimation(), "-=0.5")
 

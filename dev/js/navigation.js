@@ -36,10 +36,11 @@ const navigationTLTwo = gsap.timeline();
 
 export function navigationAnimationTwo(){
     // navigationTLTwo.to("#nav-arrow",{duration:0.25, alpha:1});
-    navigationTLTwo.to("#nav-arrow", {onStart: showDot, duration:20, motionPath:{path:"#original-path", align:"#original-path", alignOrigin: [0.5, 0.5], autoRotate: true}});
+    navigationTLTwo.to("#nav-arrow", {onStart: showDot, duration:10, motionPath:{path:"#original-path", align:"#original-path", alignOrigin: [0.5, 0.5], autoRotate: true}});
     return navigationTLTwo;
 }
 
 function showDot(){
     gsap.set("#nav-arrow",{alpha:1});
+    
 }

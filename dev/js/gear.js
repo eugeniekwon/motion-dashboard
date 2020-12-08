@@ -1,5 +1,7 @@
 import {gsap} from "gsap";
 
+import { countUpNumbers } from "./speedometer.js"
+
 const gearTL = gsap.timeline();
 
 // gsap.set("#gear", {transformOrigin: "50% 50%"})
@@ -40,7 +42,7 @@ gearTLTwo.to("#gear-marker", {duration:0.4, y:80, ease:5}, "R")
         .to("#gearR", {opacity:0, duration:0.3}, "remove")
         .to("#gearP", {opacity:0, duration:0.3}, "remove")
         .to("#gearD", {duration: 0.2, y:-226}, "remove")
-        .to("#gearD", {duration: 0.2, scale: 1.2})
+        .to("#gearD", {duration: 0.2, scale: 1.2, onComplete: countUpNumbers})
         
 
 export function gearAnimationTwo(){
