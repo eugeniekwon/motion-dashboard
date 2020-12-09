@@ -1,17 +1,12 @@
 import {gsap} from "gsap";
 import {navigationAnimationTwo} from "./navigation.js";
 
-
-
 const speedometerTL = gsap.timeline();
- 
 gsap.set("#speedometer", {transformOrigin: "50% 50%"})
 gsap.set("#navigation", {transformOrigin: "50% 50%"})
-
 gsap.set(".tickmark", {opacity: 0});
 
 export function speedometerAnimation(){
-// console.log("SPEED");
     speedometerTL.fromTo("#speedometer", {opacity:0, scale:0.5}, {opacity:1, scale: 1, duration: 0.3}, "speed")
                     .fromTo("#tickmark-1", {opacity: 0}, {opacity: 1, ease: 2, duration:0.1}, "-=0.05")
                     .fromTo("#tickmark-2", {opacity: 0}, {opacity: 1, ease: 2, duration:0.1}, "-=0.05")
@@ -34,28 +29,15 @@ export function speedometerAnimation(){
 
 export function countUpNumbers(){
 
-    // console.log("count up");
-
     navigationAnimationTwo();
 
     const countUpNums = gsap.timeline();
-    countUpNums.to(".tickmark", {opacity: 1, duration: 0.45, stagger:0.5, delay:0.7})
-                .to(".tickmark", {opacity:0, duration:0.45, stagger:0.5}, "-=3.6")
-
-                // .to(".countown", {opacity: 1, duration: 0.45, stagger:-0.5})
-                // .to(".countown", {opacity:0, duration:0.45, stagger:-0.5}, "-=3.5")
+    countUpNums.to(".tickmark", {opacity:1, duration:0.45, stagger:0.51, delay:0.7})
+                .to(".tickmark", {opacity:0, duration:0.45, stagger:0.51}, "-=3.6")
+                .to(".countdown", {opacity:1, duration:0.5, stagger:-0.9})
+                .to(".countdown", {opacity:0, duration:0.5, stagger:-0.9}, "-=1.5")
+                .to("#speed-zero", {opacity:1, duration:1}, "-=0.4")
 }
-
-
-export function countDownNumbers(){
-
-    // console.log("count up");
-
-    const countDownNums = gsap.timeline();
-    countDownNums.to(".countown", {opacity: 1, duration: 0.45, stagger:-0.5})
-                .to(".countown", {opacity:0, duration:0.45, stagger:-0.5}, "-=3.5")
-}
-
 
 // function addDelay(){
 //     console.log("DELAY");
